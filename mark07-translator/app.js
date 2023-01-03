@@ -2,7 +2,7 @@ var btnTranslate = document.querySelector(".btn-translate");
 var ipTxt = document.querySelector("#ip-txt");
 var outputTxt = document.querySelector(".output");
 
-var serverURL = "https://api.funtranslations.com/translate/minion.json";
+var serverURL = "https://api.funtranslations.com/translate/doge.json";
 
 function getTranslationURL(input) {
     return serverURL + "?" + "text=" + input;

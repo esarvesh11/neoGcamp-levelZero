@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
 * {
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Anybody', cursive;
     margin: 0px;
 }
 
 /*defining colors as variables*/
 :root {
-    --primary-color: #fee35a;
-    --secondary-color: #ffd220;
+    --primary-color: #71662ed9;
+    --secondary-color: #aa912ab3;
 }
 
 /*navigation*/
@@ -90,7 +92,7 @@ footer .footer-text {
 }
 
 .footer-image img {
-    width: 40vw;
+    width: 20vw;
 }
 
 
