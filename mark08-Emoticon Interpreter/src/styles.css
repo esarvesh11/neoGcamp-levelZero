@@ -2,3 +2,33 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+:root {
+  --bgcolor: #ceffff;
+}
+
+* {
+  background-color: var(--bgcolor);
+}
+
+input {
+  padding: 0.5rem 1rem;
+  border: 2px solid #6b7280;
+  border-radius: 0.25rem;
+  text-align: center;
+}
+
+ul {
+  padding-inline-start: 0px;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+li {
+  margin: 0.5rem;
+  cursor: pointer;
+  font-size: 2rem;
+}

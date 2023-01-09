@@ -2,18 +2,22 @@ import React, { useState } from "react";
 import "./styles.css";
 
 var emojiDictionary = {
-  "😊": "smiling",
-  "😳": "disbelief",
-  "😔": "sad",
-  "🥡": "takeout box",
-  "❤️": "love",
-  "😑": "annoyance"
+  "🤩": "Star-Struck",
+  "😤": "Face with Steam From Nose",
+  "🙌": "Raising Hands",
+  "🙈": "See-No-Evil Monkey",
+  "🌜": "Last Quarter Moon Face",
+  "🍽️": "Fork and Knife with Plate",
+  "⛹️": "Person Bouncing Ball",
+  "🎯": "Bullseye",
+  "🌃": "Night with Stars",
+  "📑": "Bookmark Tabs"
 };
 
 var emojisWeKnow = Object.keys(emojiDictionary);
 
 export default function App() {
-  const [meaning, setMeaning] = useState("");
+  const [meaning, setMeaning] = useState("emoji meaning will appear here😉");
 
   function emojiInputHandler(event) {
     // processing
@@ -22,7 +26,7 @@ export default function App() {
     var meaning = emojiDictionary[userInput];
 
     if (meaning === undefined) {
-      meaning = "we don't have this in our database";
+      meaning = "404..Emoji not found😞";
     }
     setMeaning(meaning); // react call to show output
   }
@@ -34,9 +38,9 @@ export default function App() {
   }
   return (
     <div className="App">
-      <h1>inside outt!</h1>
+      <h1>Emoticon Interpreter</h1>
 
-      <input onChange={emojiInputHandler} />
+      <input placeholder={"enter your emoji"} onChange={emojiInputHandler} />
 
       <h2> {meaning} </h2>
       {/* Actual output set by React using useState */}
