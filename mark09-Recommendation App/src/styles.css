@@ -1,0 +1,15 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem;
+}
+
+:root {
+  --bgColor: #f1f5f9;
+}
+
+body {
+  background-color: var(--bgColor);
+}
