@@ -5,27 +5,21 @@ export default function App() {
   var [movieName, setMovieName] = useState([]);
   var movieGenre = {
     comedy: [
-      { name: "The Hangover", rating: "7.8/10" },
-      { name: "Hera Pheri", rating: "8.1/10" },
-      { name: "The Hangover", rating: "6.5/10" }
+      { name: "Hungama", rating: "7.6/10" },
+      { name: "Dhamaal", rating: "7.4/10" },
+      { name: "Phir Hera Pheri", rating: "7.2/10" }
     ],
-    "sci-fi": [
-      { name: "Tenet 7.3", rating: "7.3/10" },
-      { name: "Inception", rating: "8.8/10" },
-      { name: "Iron Man", rating: "7.9/10" }
+    suspense: [
+      { name: "Drishyam", rating: "8.2/10" },
+      { name: "A Wednesday", rating: "8.1/10" },
+      { name: "Special 26", rating: "7.9/10" }
     ],
     drama: [
-      { name: "Prisoners", rating: "6.9/10" },
-      { name: "Good Will Hunting", rating: "8.2/10" },
-      { name: "Jersey", rating: "8.5/10" }
+      { name: "Zindagi Na Milegi Dobara", rating: "8.6/10" },
+      { name: "Yeh Jawaani Hai Deewani", rating: "8.2/10" },
+      { name: "English Vinglish", rating: "7.8/10" }
     ]
   };
-
-  // var movieGenre = {
-  //   comedy: "The Hangover 7.8",
-  //   "sci-fi": "Tenet 7.3",
-  //   drama: "Prisoners"
-  // };
 
   function clickHandler(event) {
     var genre = event.target.innerText;
@@ -36,40 +30,21 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>📺 goodmovies</h1>
-      <p>checkout my favourite movies ! select genre to get started</p>
+      <h1>
+        <span role="img" aria-label="emoji">
+          🎬
+        </span>{" "}
+        Hindi Movies
+      </h1>
+      <p>checkout my favourite hindi movies ! select genre to get started</p>
       <div>
-        <button
-          name="Comedy"
-          style={{
-            margin: "1rem",
-            padding: "0.2rem 0.2rem",
-            cursor: "pointer"
-          }}
-          onClick={clickHandler}
-        >
+        <button name="Comedy" onClick={clickHandler}>
           comedy
         </button>
-        <button
-          name="Sci-Fi"
-          style={{
-            margin: "1rem",
-            padding: "0.2rem 0.2rem",
-            cursor: "pointer"
-          }}
-          onClick={clickHandler}
-        >
-          sci-fi
+        <button name="suspense" onClick={clickHandler}>
+          suspense
         </button>
-        <button
-          name="Drama"
-          style={{
-            margin: "1rem",
-            padding: "0.2rem 0.2rem",
-            cursor: "pointer"
-          }}
-          onClick={clickHandler}
-        >
+        <button name="Drama" onClick={clickHandler}>
           drama
         </button>
       </div>
@@ -78,28 +53,9 @@ export default function App() {
       <div>
         <ul>
           {movieName.map((movie) => (
-            <li
-              style={{
-                listStyleType: "none",
-                border: "1px solid black",
-                padding: "1rem 0.8rem",
-                borderRadius: "0.5rem",
-                margin: "0.5rem",
-                textAlign: "left",
-                fontWeight: "bold"
-              }}
-            >
+            <li>
               {movie.name}
-              <small
-                style={{
-                  textAlign: "left",
-                  display: "block",
-                  fontSize: "0.7rem",
-                  fontWeight: "lighter"
-                }}
-              >
-                IMDB: {movie.rating}
-              </small>
+              <small>IMDB: {movie.rating}</small>
             </li>
           ))}
         </ul>

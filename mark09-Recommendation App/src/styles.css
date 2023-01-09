@@ -7,9 +7,50 @@
 }
 
 :root {
-  --bgColor: #f1f5f9;
+  --bg-color: #fffcd6;
+  --primary-color: #ffc76d;
+  --secondary-color: #ffe77c;
 }
 
 body {
-  background-color: var(--bgColor);
+  background-color: var(--bg-color);
+}
+
+button {
+  cursor: pointer;
+  margin: 0rem 0.5rem 1rem;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.2rem;
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 0.25rem;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+  border: 1px solid white;
+}
+
+ul {
+  padding-inline-start: 0px;
+}
+
+ul li {
+  background-color: var(--primary-color);
+  list-style: none;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  padding: 1rem 0.8rem;
+  margin: 0.5rem;
+  text-align: left;
+  font-weight: bold;
+}
+
+small {
+  text-align: left;
+  display: block;
+  font-size: 0.7rem;
+  font-weight: lighter;
 }
