@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #4f46e5;
+    --dark-gray: #6B7280;
+    --off-white: #F3F4F6;
+    --dark-hover: #111827;
+}
+
+body {
+    font-family: 'Merriweather Sans', sans-serif;
+    margin: 0px;
+}
+
+hr {
+    margin: 2rem 0rem;
+}
+
+/** spaces **/
+
+.margin-md {
+    margin: 2rem;
+}
+
+/** container **/
+.container {
+    padding: 0rem 1rem;
+}
+
+.container-center {
+    max-width: 600px;
+    margin: auto;
+}
+
+/** links **/
+.link {
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.link-primary {
+    background-color: var(--primary-color);
+    border-radius: 0.5rem;
+    color: white;
+    /* display: block; */
+    max-width: 140px;   
+    margin: 1rem 1rem 1rem 0rem;
+}
+
+.link-secondary {
+    color: var(--primary-color);
+    border-radius: 0.5rem;
+    border: 1px solid var(--primary-color);
+    /* display: block; */
+    max-width: 140px;
+    margin: 1rem 1rem 1rem 0rem;
+}
+
+/** look into BEM naming convention for CSS **/
+
+/** lists **/
+
+.list-non-bullet {
+    list-style: none;
+    padding-inline-start: 0px;
+}
+
+.list-item-inline {
+    display: inline;
+    padding: 0rem 0.5rem;
+}
+
+/** navigation **/
+
+.navigation {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.navigation .nav-brand {
+    font-weight: bold;
+}
+
+.navigation .nav-pills {
+    text-align: right;
+}
+
+.navigation .link {
+    color: white;
+}
+
+.navigation .link:hover {
+    color: cyan;
+}
+
+.navigation .link-active {
+    font-weight: bold;
+}
+
+/** header **/
+
+.hero {
+    padding: 1rem;
+    padding-top: 4rem;
+}
+
+.hero .hero-img {
+    max-width: 80%;
+    width: 350px;
+    display: block;
+    margin: auto;
+}
+
+.hero .hero-heading {
+    text-align: center;
+    padding-top: 1rem;
+    color: var(--dark-gray);
+}
+
+.hero .hero-heading .heading-inverted {
+    color: var(--primary-color);
+}
+
+/** sections **/
+
+.section {
+    padding: 2rem;
+}
+
+.section h1 {
+    text-align: center;
+
+}
+
+.ow {
+    background-color: var(--off-white);
+}
+
+/** footers **/
+
+.footer {
+    background-color: var(--primary-color);
+    padding: 2rem 1rem;
+    text-align: center;
+    color: white;
+    border-top-right-radius: 1rem;
+}
+
+.footer .link {
+    color: white
+}
+
+.footer .footer-header {
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.footer ul {
+    padding-inline-start: 0px;
+    margin-bottom: 3rem;
+}
+
+/*footer icons*/
+.footer .icon {
+    color: white;
+    padding: 0rem 0.7rem;
+}
+
+.footer li {
+    font-size: 1.5rem;
+}
+
+.footer .icon:hover {
+    color: var(--dark-hover);
+}
+
+.footer .link-footer{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer .link-footer:hover {
+    color: var(--dark-hover);    
+}
+
+/** projects **/
+.showcase-list {
+    padding: 2rem;
+}
+
+/** blogs **/
+.showcase-blog {
+    padding-bottom: 6rem;
+}
+
+.link-blogs:hover {
+    color: white;
+    background-color: var(--primary-color);
+}
+
+
+
+
