@@ -6,7 +6,7 @@ A Translator App which translates english sentences to Minion Language.
 
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-![JS](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![JS](https://img.shields.io/badge/vanillaJS-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 ---
 
