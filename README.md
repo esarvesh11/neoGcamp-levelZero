@@ -14,4 +14,4 @@ Mark9 checklist of neog.camp
 
 ---
 
-**Thanks to [neog.camp](https://neog.camp/) for all the awesome projects.**
+**Visit [neog.camp](https://neog.camp/) for all the awesome projects.**
